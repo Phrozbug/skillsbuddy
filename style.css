@@ -1,0 +1,84 @@
+body::before {
+    display: block;
+    content: '';
+    height: 60px;
+}
+
+#map {
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+}
+
+@media (min-width: 768px) {
+    .news-input {
+        width: 50%;
+    }
+}
+
+label {
+    color: white;
+    padding-right: 50px;
+}
+
+input, textarea, select {
+    display: block;
+    background-color: lightskyblue;
+}
+
+.form-example { padding: 20px 0; }
+
+.form-example p.description { margin-bottom: 20px; }
+.form-example p.copyright { margin-top: 40px; }
+
+.form-example .form-group { text-align: left; }
+
+.form-example input[type="text"],
+.form-example textarea,
+.form-example input[type="email"],
+.form-example input[type="password"] {
+    background: none; border: 1px solid #ddd; 
+    font-family: 'Open Sans', sans-serif; font-size: 15px; font-weight: 400; color: #888; 
+    box-shadow: none;
+}
+.form-example input[type="text"]:focus,
+.form-example input[type="email"]:focus,
+.form-example input[type="password"]:focus { outline: 0; background: none; border: 1px solid #a365bc; box-shadow: none; }
+
+.form-example input[type="text"]::-moz-placeholder,
+.form-example textarea::-moz-placeholder,
+.form-example input[type="email"]::-moz-placeholder,
+.form-example input[type="password"]::-moz-placeholder { color: #bbb; font-style: italic; }
+
+.form-example input[type="text"]:-ms-input-placeholder,
+.form-example textarea:-ms-input-placeholder,
+.form-example input[type="email"]:-ms-input-placeholder,
+.form-example input[type="password"]:-ms-input-placeholder { color: #bbb; font-style: italic; }
+
+.form-example input[type="text"]::-webkit-input-placeholder,
+.form-example textarea::-webkit-input-placeholder,
+.form-example input[type="email"]::-webkit-input-placeholder,
+.form-example input[type="password"]::-webkit-input-placeholder { color: #bbb; font-style: italic; }
+
+.form-example textarea:focus { outline: 0; color: rgb(192, 192, 192); background: none; border: 1px solid #a365bc; box-shadow: none; }
+
+.form-example button.btn-customized {
+	margin-top: 1rem;
+	padding: .75rem 1.5rem; 
+	background: #a365bc;
+	border: 0; 
+	font-family: 'Open Sans', sans-serif;
+	font-size: 15px;
+	font-weight: 400; color: #fff; 
+    box-shadow: none;
+}
+
+.form-example button.btn-customized:hover, 
+.form-example button.btn-customized:active, 
+.form-example button.btn-customized:focus, 
+.form-example button.btn-customized:active:focus, 
+.form-example button.btn-customized.active:focus,
+.form-example button.btn.btn-primary:not(:disabled):not(.disabled):active,
+.form-example button.btn.btn-primary:not(:disabled):not(.disabled):active:focus {
+	outline: 0; background: #8542a0; border: 0; color: #fff; box-shadow: none;
+}

@@ -7,6 +7,6 @@ It focusses on the use of PHP and PHP-PDO in combination with HTML/CSS/Bootstrap
 
 ## Git
 
-Also learning to work with git
+Also learning to work with git.
 
 Ook het werken met meerdere branches
