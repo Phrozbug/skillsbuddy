@@ -66,17 +66,7 @@ if (!empty($_SESSION['_contact_form_success'])) {
             font-style: italic;
         }
 
-        ::-moz-selection {
-            background: #8542a0;
-            color: #fff;
-            text-shadow: none;
-        }
-
-        ::selection {
-            background: #8542a0;
-            color: #fff;
-            text-shadow: none;
-        }
+        
     </style>
     <!--Navigation-->
     <nav class="navbar navbar-expand-lg bg-dark navbar-dark py-3 fixed-top">
