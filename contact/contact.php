@@ -35,39 +35,7 @@ if (!empty($_SESSION['_contact_form_success'])) {
 </head>
 
 <body class="h-100">
-    <style>
-        body {
-            background-color: #212529;
-            font-family: 'Open Sans', sans-serif;
-            font-size: 15px;
-            font-weight: 400;
-            color: #888;
-            line-height: 30px;
-            text-align: center;
-        }
 
-        a {
-            color: #a365bc;
-            text-decoration: none;
-            transition: all .3s;
-        }
-
-        a:hover a:focus {
-            color: #a365bc;
-            border: 0;
-            text-decoration: none;
-        }
-
-        h1 {
-            font-size: 26px;
-            font-weight: 300;
-            color: #555;
-            line-height: 46px;
-            font-style: italic;
-        }
-
-        
-    </style>
     <!--Navigation-->
     <nav class="navbar navbar-expand-lg bg-dark navbar-dark py-3 fixed-top">
         <div class="container">
@@ -78,11 +46,14 @@ if (!empty($_SESSION['_contact_form_success'])) {
     <div class="bg-dark text-light p-5 ">
         <div class="container h-100">
             <div class="row h-100 justify-content-center align-items-center">
+                <div class="text-center">
+                    <h1 class="text-warning">Login</h1>
+                </div>
                 <div class="col-10 col-md-8 col-lg-6">
+
+                    <!-- form -->
                     <form class="form-example" method="post" action="submit.php">
-                        <h1>
-                            Contact
-                        </h1>
+
 
                         <?php
                         if (!empty($success)) {

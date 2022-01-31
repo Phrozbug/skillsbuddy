@@ -47,50 +47,6 @@ if (isset($_POST['username']) && isset($_POST['password'])) {
 </head>
 
 <body class="h-100">
-    <style>
-        body {
-            background-color: #212529;
-            font-family: 'Open Sans', sans-serif;
-            font-size: 15px;
-            font-weight: 400;
-            color: #888;
-            line-height: 30px;
-            text-align: center;
-        }
-
-        a {
-            color: #a365bc;
-            text-decoration: none;
-            transition: all .3s;
-        }
-
-        a:hover
-        a:focus {
-            color: #a365bc;
-            border: 0;
-            text-decoration: none;
-        }
-
-        h1 {
-            font-size: 26px;
-            font-weight: 300;
-            color: #555;
-            line-height: 46px;
-            font-style: italic;
-        }
-
-        ::-moz-selection {
-            background: #8542a0;
-            color: #fff;
-            text-shadow: none;
-        }
-
-        ::selection {
-            background: #8542a0;
-            color: #fff;
-            text-shadow: none;
-        }
-    </style>
 
     <!--Navigation-->
     <nav class="navbar navbar-expand-lg bg-dark navbar-dark py-3 fixed-top">
@@ -105,23 +61,26 @@ if (isset($_POST['username']) && isset($_POST['password'])) {
         <div class="container h-100">
             <div class="row h-100 justify-content-center align-items-center">
                 <div class="col-10 col-md-8 col-lg-6">
+                    <div class="text-center">
+                        <h1 class="text-warning">Login</h1>
+                        <p class="description">Om te kunnen bewerken en/of toevoegen moet je inloggen</p>
+                    </div>    
+
                     <!-- Form -->
                     <form class="form-example" action="" method="post">
-                        <h1>Login</h1>
-                        <p class="description">Om te kunnen bewerken en/of toevoegen moet je inloggen</p>
-                        <!-- Input fields -->
-                        <div class="form-group">
-                            <label for="username">Username:</label>
-                            <input type="text" class="form-control username" id="username" placeholder="Username..." name="username">
-                        </div>
-                        <div class="form-group">
-                            <label for="password">Password:</label>
-                            <input type="password" class="form-control password" id="password" placeholder="Password..." name="password">
-                        </div>
-                        <?php if (isset($_SESSION['error'])) { ?>
-                            <div style="color: red;"><?= $_SESSION['error']; ?></div>
-                        <?php } ?>
-                        <button type="submit" class="btn btn-primary btn-customized">Login</button>
+                            <!-- Input fields -->
+                            <div class="form-group">
+                                <label for="username">Username:</label>
+                                <input type="text" class="form-control username" id="username" placeholder="Username..." name="username">
+                            </div>
+                            <div class="form-group">
+                                <label for="password">Password:</label>
+                                <input type="password" class="form-control password" id="password" placeholder="Password..." name="password">
+                            </div>
+                            <?php if (isset($_SESSION['error'])) { ?>
+                                <div style="color: red;"><?= $_SESSION['error']; ?></div>
+                            <?php } ?>
+                            <button type="submit" class="btn btn-primary btn-customized">Login</button>
                     </form>
                 </div>
             </div>
