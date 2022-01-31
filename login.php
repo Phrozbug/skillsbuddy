@@ -44,6 +44,11 @@ if (isset($_POST['username']) && isset($_POST['password'])) {
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
     <link rel="stylesheet" href="style.css" />
     <title>Skillsbuddy - Eindopdracht Marc Roelofs</title>
+    <style>
+    body {
+        background-color: #212529;
+    }
+    </style>
 </head>
 
 <body class="h-100">

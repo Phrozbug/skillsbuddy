@@ -47,7 +47,7 @@ if (!empty($_SESSION['_contact_form_success'])) {
         <div class="container h-100">
             <div class="row h-100 justify-content-center align-items-center">
                 <div class="text-center">
-                    <h1 class="text-warning">Login</h1>
+                    <h1 class="text-warning">Contact</h1>
                 </div>
                 <div class="col-10 col-md-8 col-lg-6">
 
@@ -104,6 +104,14 @@ if (!empty($_SESSION['_contact_form_success'])) {
             </div>
         </div>
     </div>
+
+    <!-- Footer -->
+    <footer class="p-5 bg-dark text-white text-center position-relative">
+        <div class="container">
+            <p class="lead">Copyright &copy; 2022 Marc Roelofs</p>
+
+        </div>
+    </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
 

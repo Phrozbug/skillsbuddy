@@ -43,7 +43,7 @@ input, textarea, select {
 }
 .form-example input[type="text"]:focus,
 .form-example input[type="email"]:focus,
-.form-example input[type="password"]:focus { outline: 0; background: none; border: 1px solid #a365bc; box-shadow: none; }
+.form-example input[type="password"]:focus { outline: 0; background: none; border: 1px solid #0D6EFD; box-shadow: none; }
 
 .form-example input[type="text"]::-moz-placeholder,
 .form-example textarea::-moz-placeholder,
@@ -60,12 +60,12 @@ input, textarea, select {
 .form-example input[type="email"]::-webkit-input-placeholder,
 .form-example input[type="password"]::-webkit-input-placeholder { color: #bbb; font-style: italic; }
 
-.form-example textarea:focus { outline: 0; color: rgb(192, 192, 192); background: none; border: 1px solid #a365bc; box-shadow: none; }
+.form-example textarea:focus { outline: 0; color: rgb(192, 192, 192); background: none; border: 1px solid #0D6EFD; box-shadow: none; }
 
 .form-example button.btn-customized {
 	margin-top: 1rem;
 	padding: .75rem 1.5rem; 
-	background: #a365bc;
+	background: #0D6EFD;
 	border: 0; 
 	font-family: 'Open Sans', sans-serif;
 	font-size: 15px;
@@ -80,5 +80,5 @@ input, textarea, select {
 .form-example button.btn-customized.active:focus,
 .form-example button.btn.btn-primary:not(:disabled):not(.disabled):active,
 .form-example button.btn.btn-primary:not(:disabled):not(.disabled):active:focus {
-	outline: 0; background: #8542a0; border: 0; color: #fff; box-shadow: none;
+	outline: 0; background: #0C59CC; border: 0; color: #fff; box-shadow: none;
 }
