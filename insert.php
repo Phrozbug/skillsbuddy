@@ -68,16 +68,21 @@ if (isset($_POST['submitButton'])) {
             </button>
             <div class="collapse navbar-collapse" id="navmenu">
                 <ul class="navbar-nav ms-auto">
-                    <li class="nav-item">
-                        <a href="#toevoegen" class="nav-link">Toevoegen</a>
-                    </li>
+
+
                     <li class="nav-item">
                         <a href="/contact/contact.php" class="nav-link">Contact</a>
                     </li>
-                    <li class="nav-item">
-                        <a href="#over" class="nav-link">Over</a>
-                    </li>
+
                 </ul>
+                <button id="login" name="login" class="btn btn-dark text-warning">
+                    <?php if (isset($_SESSION['loggedInUser'])) : ?>
+                        <?php echo $_SESSION['loggedInUser'] ?>
+                    <?php else : ?>
+                        <a href="login.php?id=&file=index.php" class="text-decoration-none text-light">Login</a>
+                    <?php endif ?>
+
+                </button>
             </div>
         </div>
 
@@ -103,7 +108,7 @@ if (isset($_POST['submitButton'])) {
                                     <option value="PHP-PDO">PHP-PDO</option>
                                     <option value="JavaScript">JavaScript</option>
                                     <option value="Python">Python</option>
-                                    <option value="GIT">GIT</option>
+                                    <option value="GIT">Git</option>
                                     <option value="Diversen">Diversen</option>
                                 </select><br><br>
                                 <label for="onderdeel">Onderdeel:</label>

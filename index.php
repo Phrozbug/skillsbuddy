@@ -45,11 +45,22 @@ $inhoud_diversen = $pdo->query('SELECT * FROM skills WHERE taal = "Diversen"');
                     <li class="nav-item">
                         <a href="insert.php?" class="nav-link">Toevoegen</a>
                     </li>
-                    <li class="nav-item">
-                        <a href="/contact/contact.php" class="nav-link">Contact</a>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" data-toggle="dropdown" data-bs-toggle="dropdown" href="#">Talen</a>
+                        <div class="dropdown-menu bg-dark">
+                            <a class="dropdown-item text-light" href="#HTML">HTML</a>
+                            <a class="dropdown-item text-light" href="#CSS">CSS</a>
+                            <a class="dropdown-item text-light" href="#PHP">PHP</a>
+                            <a class="dropdown-item text-light" href="#PHP_PDO">PHP-PDO</a>
+                            <a class="dropdown-item text-light" href="#JavaScript">JavaScript</a>
+                            <a class="dropdown-item text-light" href="#Python">Python</a>
+                            <a class="dropdown-item text-light" href="#Git">Git</a>
+                            <a class="dropdown-item text-light" href="#Diversen">Diversen</a>
+                        </div>
+
                     </li>
                     <li class="nav-item">
-                        <a href="#over" class="nav-link">Over</a>
+                        <a href="/contact/contact.php" class="nav-link">Contact</a>
                     </li>
                 </ul>
                 <button id="login" name="login" class="btn btn-dark text-warning">
@@ -97,7 +108,7 @@ $inhoud_diversen = $pdo->query('SELECT * FROM skills WHERE taal = "Diversen"');
         </div>
         <h1 class="text-center mb-4">De Talen & Onderdelen</h1>
         <div class="row g-4 align-items-center justify-content-between text-center py-5">
-            <div class="col-md">
+            <div class="col-md" id="HTML">
                 <h5><span class="fw-bold">HTML</span></h5>
                 <?php while ($row = $inhoud_html->fetch()) { ?>
                     <a href="weergave.php?id=<?php echo $row['id'] ?>" class="text-decoration-none text-dark"><?php echo $row['onderdeel']; ?></a>
@@ -105,7 +116,7 @@ $inhoud_diversen = $pdo->query('SELECT * FROM skills WHERE taal = "Diversen"');
                 <?php } ?>
             </div>
 
-            <div class="col-md">
+            <div class="col-md" id="CSS">
                 <h5><span class="fw-bold">CSS</span></h5>
                 <?php while ($row = $inhoud_css->fetch()) { ?>
                     <a href="weergave.php?id=<?php echo $row['id'] ?>" class="text-decoration-none text-dark"><?php echo $row['onderdeel']; ?></a>
@@ -115,7 +126,7 @@ $inhoud_diversen = $pdo->query('SELECT * FROM skills WHERE taal = "Diversen"');
         </div>
 
         <div class="bg-dark text-light row g-4 align-items-center justify-content-between text-center">
-            <div class="col-md">
+            <div class="col-md" id="PHP">
                 <h5><span class="fw-bold">PHP</span></h5>
                 <?php while ($row = $inhoud_php->fetch()) { ?>
                     <a href="weergave.php?id=<?php echo $row['id'] ?>" class="text-decoration-none text-light"><?php echo $row['onderdeel']; ?></a>
@@ -123,7 +134,7 @@ $inhoud_diversen = $pdo->query('SELECT * FROM skills WHERE taal = "Diversen"');
                 <?php } ?>
             </div>
 
-            <div class="col-md">
+            <div class="col-md" id="PHP-PDO">
                 <h5><span class="fw-bold">PHP-PDO</span></h5>
                 <?php while ($row = $inhoud_phppdo->fetch()) { ?>
                     <a href="weergave.php?id=<?php echo $row['id'] ?>" class="text-decoration-none text-light"><?php echo $row['onderdeel']; ?></a>
@@ -133,7 +144,7 @@ $inhoud_diversen = $pdo->query('SELECT * FROM skills WHERE taal = "Diversen"');
         </div>
 
         <div class="row g-4 align-items-center justify-content-between text-center py-5">
-            <div class="col-md">
+            <div class="col-md" id="JavaScript">
                 <h5><span class="fw-bold">JavaScript</span></h5>
                 <?php while ($row = $inhoud_javascript->fetch()) { ?>
                     <a href="weergave.php?id=<?php echo $row['id'] ?>" class="text-decoration-none text-dark"><?php echo $row['onderdeel']; ?></a>
@@ -141,7 +152,7 @@ $inhoud_diversen = $pdo->query('SELECT * FROM skills WHERE taal = "Diversen"');
                 <?php } ?>
             </div>
 
-            <div class="col-md">
+            <div class="col-md" id="Python">
                 <h5><span class="fw-bold">Python</span></h5>
                 <?php while ($row = $inhoud_python->fetch()) { ?>
                     <a href="weergave.php?id=<?php echo $row['id'] ?>" class="text-decoration-none text-dark"><?php echo $row['onderdeel']; ?></a>
@@ -151,15 +162,15 @@ $inhoud_diversen = $pdo->query('SELECT * FROM skills WHERE taal = "Diversen"');
         </div>
 
         <div class="bg-dark text-light row g-4 align-items-center justify-content-between text-center">
-            <div class="col-md">
-                <h5><span class="fw-bold">GIT</span></h5>
+            <div class="col-md" id="Git">
+                <h5><span class="fw-bold">Git</span></h5>
                 <?php while ($row = $inhoud_git->fetch()) { ?>
                     <a href="weergave.php?id=<?php echo $row['id'] ?>" class="text-decoration-none text-light"><?php echo $row['onderdeel']; ?></a>
                     <br>
                 <?php } ?>
             </div>
 
-            <div class="col-md">
+            <div class="col-md" id="Diversen">
                 <h5><span class="fw-bold">Diversen</span></h5>
                 <?php while ($row = $inhoud_diversen->fetch()) { ?>
                     <a href="weergave.php?id=<?php echo $row['id'] ?>" class="text-decoration-none text-light"><?php echo $row['onderdeel']; ?></a>

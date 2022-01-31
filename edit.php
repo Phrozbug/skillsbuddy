@@ -84,16 +84,21 @@ $taal_current = $weergave['taal'];
             </button>
             <div class="collapse navbar-collapse" id="navmenu">
                 <ul class="navbar-nav ms-auto">
-                    <li class="nav-item">
-                        <a href="#toevoegen" class="nav-link">Toevoegen</a>
-                    </li>
+
+
                     <li class="nav-item">
                         <a href="/contact/contact.php" class="nav-link">Contact</a>
                     </li>
-                    <li class="nav-item">
-                        <a href="#over" class="nav-link">Over</a>
-                    </li>
+                    
                 </ul>
+                <button id="login" name="login" class="btn btn-dark text-warning">
+                    <?php if (isset($_SESSION['loggedInUser'])) : ?>
+                        <?php echo $_SESSION['loggedInUser'] ?>
+                    <?php else : ?>
+                        <a href="login.php?id=&file=index.php" class="text-decoration-none text-light">Login</a>
+                    <?php endif ?>
+
+                </button>
             </div>
         </div>
 
@@ -120,7 +125,7 @@ $taal_current = $weergave['taal'];
                                     <option value="PHP-PDO" <?= $taal_current == "PHP-PDO" ? 'selected' : '' ?>>PHP-PDO</option>
                                     <option value="JavaScript" <?= $taal_current == "JavaScripy" ? 'selected' : '' ?>>JavaScript</option>
                                     <option value="Python" <?= $taal_current == "Python" ? 'selected' : '' ?>>Python</option>
-                                    <option value="GIT" <?= $taal_current == "GIT" ? 'selected' : '' ?>>GIT</option>
+                                    <option value="GIT" <?= $taal_current == "GIT" ? 'selected' : '' ?>>Git</option>
                                     <option value="Diversen" <?= $taal_current == "Diversen" ? 'selected' : '' ?>>Diversen</option>
                                 </select><br><br>
                                 <label for="onderdeel">Onderdeel:</label>
