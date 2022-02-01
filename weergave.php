@@ -69,7 +69,7 @@ $weergave = $weergave->fetch();
                     <a href="<?php echo $weergave['onlinedoc'] ?>" target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-lg">Online documentatie</a>
                 </div>
                 <div>
-                    <iframe class="d-none d-sm-block" width="420" height="345" frameborder="0" src="https://www.youtube.com/embed/<?php echo $weergave['videoid']; ?>?autoplay=01&mute=0"></iframe>
+                    <iframe class="d-none d-sm-block" width="420" height="345" frameborder="0" allowfullscreen src="https://www.youtube.com/embed/<?php echo $weergave['videoid']; ?>?autoplay=01&mute=0"></iframe>
                     <a href="https://www.youtube.com/watch?v=<?php echo $weergave['videoid'] ?>" class="m-5 btn btn-danger btn-m d-block d-sm-none">Video uitleg</a>
                 </div>
             </div>
