@@ -60,7 +60,7 @@ $inhoud_diversen = $pdo->query('SELECT * FROM skills WHERE taal = "Diversen"');
 
                     </li>
                     <li class="nav-item">
-                        <a href="/contact/contact.php" class="nav-link">Contact</a>
+                        <a href="contact/contact.php" class="nav-link">Contact</a>
                     </li>
                 </ul>
                 <button id="login" name="login" class="btn btn-dark text-warning">
