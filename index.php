@@ -51,7 +51,7 @@ $inhoud_diversen = $pdo->query('SELECT * FROM skills WHERE taal = "Diversen"');
                             <a class="dropdown-item text-light" href="#HTML">HTML</a>
                             <a class="dropdown-item text-light" href="#CSS">CSS</a>
                             <a class="dropdown-item text-light" href="#PHP">PHP</a>
-                            <a class="dropdown-item text-light" href="#PHP_PDO">PHP-PDO</a>
+                            <a class="dropdown-item text-light" href="#PHP-PDO">PHP-PDO</a>
                             <a class="dropdown-item text-light" href="#JavaScript">JavaScript</a>
                             <a class="dropdown-item text-light" href="#Python">Python</a>
                             <a class="dropdown-item text-light" href="#Git">Git</a>
