@@ -51,7 +51,7 @@ $inhoud_diversen = $pdo->query('SELECT * FROM skills WHERE taal = "Diversen"');
                             <a class="dropdown-item text-light" href="#HTML">HTML</a>
                             <a class="dropdown-item text-light" href="#CSS">CSS</a>
                             <a class="dropdown-item text-light" href="#PHP">PHP</a>
-                            <a class="dropdown-item text-light" href="#PHP-PDO">PHP-PDO</a>
+                            <a class="dropdown-item text-light" href="#PHP-PDO">MySQL/PHP-PDO</a>
                             <a class="dropdown-item text-light" href="#JavaScript">JavaScript</a>
                             <a class="dropdown-item text-light" href="#Python">Python</a>
                             <a class="dropdown-item text-light" href="#Git">Git</a>
@@ -83,8 +83,8 @@ $inhoud_diversen = $pdo->query('SELECT * FROM skills WHERE taal = "Diversen"');
         <div class="container">
             <div class="d-sm-flex align-items-center justify-content-between">
                 <div>
-                    <h1>Notities voor de <span class="text-warning">Web Developer</span></h1>
-                    <p class="lead my-4">Hier kun je bijhouden welke programmeertalen je hebt geleerd. Per taal kun je
+                    <h1>Skillsbuddy voor de <span class="text-warning">Web Developer</span></h1>
+                    <p class="lead my-4">Met Skillsbuddy kun je bijhouden welke programmeertalen je hebt geleerd. Per taal kun je
                         de relevante informatie raadplegen, veranderen en toevoegen.
                     </p>
 
@@ -135,7 +135,7 @@ $inhoud_diversen = $pdo->query('SELECT * FROM skills WHERE taal = "Diversen"');
             </div>
 
             <div class="col-md" id="PHP-PDO">
-                <h5><span class="fw-bold">PHP-PDO</span></h5>
+                <h5><span class="fw-bold">MySQL/PHP-PDO</span></h5>
                 <?php while ($row = $inhoud_phppdo->fetch()) { ?>
                     <a href="weergave.php?id=<?php echo $row['id'] ?>" class="text-decoration-none text-light"><?php echo $row['onderdeel']; ?></a>
                     <br>

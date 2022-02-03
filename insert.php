@@ -105,7 +105,7 @@ if (isset($_POST['submitButton'])) {
                                     <option value="Bootstrap">Bootstrap</option>
                                     <option value="PHP">PHP</option>
                                     <option value="CSS">CSS</option>
-                                    <option value="PHP-PDO">PHP-PDO</option>
+                                    <option value="PHP-PDO">MySQL/PHP-PDO</option>
                                     <option value="JavaScript">JavaScript</option>
                                     <option value="Python">Python</option>
                                     <option value="GIT">Git</option>

@@ -122,7 +122,7 @@ $taal_current = $weergave['taal'];
                                     <option value="Bootstrap" <?= $taal_current == "Bootstrap" ? 'selected' : '' ?>>Bootstrap</option>
                                     <option value="PHP" <?= $taal_current == "PHP" ? 'selected' : '' ?>>PHP</option>
                                     <option value="CSS" <?= $taal_current == "CSS" ? 'selected' : '' ?>>CSS</option>
-                                    <option value="PHP-PDO" <?= $taal_current == "PHP-PDO" ? 'selected' : '' ?>>PHP-PDO</option>
+                                    <option value="PHP-PDO" <?= $taal_current == "PHP-PDO" ? 'selected' : '' ?>>MySQL/PHP-PDO</option>
                                     <option value="JavaScript" <?= $taal_current == "JavaScripy" ? 'selected' : '' ?>>JavaScript</option>
                                     <option value="Python" <?= $taal_current == "Python" ? 'selected' : '' ?>>Python</option>
                                     <option value="GIT" <?= $taal_current == "GIT" ? 'selected' : '' ?>>Git</option>
