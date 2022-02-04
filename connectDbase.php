@@ -3,7 +3,7 @@
 function connectDatabase() {
 
 $host = '127.0.0.1';
-$db   = 'skillsbuddy';
+$db   = 'epiz_30900706_skillsbuddy';
 $user = 'bit_academy';
 $pass = 'bit_academy';
 $charset = 'utf8mb4';
