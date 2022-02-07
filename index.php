@@ -23,6 +23,19 @@ $inhoud_diversen = $pdo->query('SELECT * FROM skills WHERE taal = "Diversen"');
 <html lang="en">
 
 <head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-194047847-4"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag('js', new Date());
+
+        gtag('config', 'UA-194047847-4');
+    </script>
+
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -30,8 +43,8 @@ $inhoud_diversen = $pdo->query('SELECT * FROM skills WHERE taal = "Diversen"');
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
     <link rel="stylesheet" href="style.css" />
     <title>Skillsbuddy - Notities voor de Web Developer</title>
-    <meta name="description" content="Met Skillsbuddy kun je bijhouden welke programmeertalen je hebt geleerd. Per taal kun je de relevante informatie raadplegen, veranderen en toevoegen."/>
-    <meta name="keywords" content="full stack web development, coding, programmeren, notities, html, css, MySQL, PHP, PDO, PHP-PDO, javascript, python, git,"/>
+    <meta name="description" content="Met Skillsbuddy kun je bijhouden welke programmeertalen je hebt geleerd. Per taal kun je de relevante informatie raadplegen, veranderen en toevoegen." />
+    <meta name="keywords" content="full stack web development, coding, programmeren, notities, html, css, MySQL, PHP, PDO, PHP-PDO, javascript, python, git," />
     <meta name="author" content="Marc Roelofs" />
     <meta name="copyright" content="Marc Roelofs" />
 
