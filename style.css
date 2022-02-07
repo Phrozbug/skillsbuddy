@@ -82,3 +82,4 @@ input, textarea, select {
 .form-example button.btn.btn-primary:not(:disabled):not(.disabled):active:focus {
 	outline: 0; background: #0C59CC; border: 0; color: #fff; box-shadow: none;
 }
+
