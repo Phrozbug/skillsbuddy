@@ -51,7 +51,7 @@ $inhoud_diversen = $pdo->query('SELECT * FROM skills WHERE taal = "Diversen"');
 </head>
 
 <body>
-    </div>
+        
     <!--Navigation-->
     <nav class="navbar navbar-expand-lg bg-dark navbar-dark py-3 fixed-top">
         <div class="container">
@@ -95,9 +95,8 @@ $inhoud_diversen = $pdo->query('SELECT * FROM skills WHERE taal = "Diversen"');
         </div>
 
     </nav>
-
-    <!--Hero-->
-
+    
+    <!-- hero -- -->
     <section class="bg-dark text-light p-5 p-lg-0 pt-lg-5 text-center text-sm-start">
         <div class="container">
             <div class="d-sm-flex align-items-center justify-content-between">
@@ -106,7 +105,7 @@ $inhoud_diversen = $pdo->query('SELECT * FROM skills WHERE taal = "Diversen"');
                     <p class="lead my-4">Met Skillsbuddy kun je bijhouden welke programmeertalen je hebt geleerd. Per taal kun je
                         de relevante informatie raadplegen, veranderen en toevoegen.
                     </p>
-
+                    
                     <button class="btn btn-primary btn-lg" data-bs-toggle="modal" data-bs-target="#enroll">
                         Meer informatie</button>
                 </div>
@@ -200,6 +199,7 @@ $inhoud_diversen = $pdo->query('SELECT * FROM skills WHERE taal = "Diversen"');
         </div>
     </section>
 
+    
     <!-- Footer -->
     <footer class="p-5 bg-dark text-white text-center position-relative">
         <div class="container">
@@ -247,8 +247,15 @@ $inhoud_diversen = $pdo->query('SELECT * FROM skills WHERE taal = "Diversen"');
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous">
     </script>
-
-
+    <script type="text/javascript">
+var cpm = {};
+(function(h,u,b){
+var d=h.getElementsByTagName("script")[0],e=h.createElement("script");
+e.async=true;e.src='https://cookiehub.net/c2/2c9d156d.js';
+e.onload=function(){u.cookiehub.load(b);};
+d.parentNode.insertBefore(e,d);
+})(document,window,cpm);
+</script>
 </body>
 
 </html>
