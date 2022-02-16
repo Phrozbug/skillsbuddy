@@ -1,5 +1,11 @@
 # Skillsbuddy
 
+Direct link to skillsbuddy.nl: 
+
+[Skillsbuddy](https://skillsbuddy.nl)
+
+
+
 Skillsbuddy is my final assignment for the beginner web development course of Bit Academy in The Netherlands.
 It is a website where you can track your your skills in coding.
 
