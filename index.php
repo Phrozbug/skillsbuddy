@@ -127,18 +127,25 @@ $inhoud_diversen = $pdo->query('SELECT * FROM skills WHERE taal = "Diversen"');
         <h1 class="text-center mb-4">De Talen & Onderdelen</h1>
         <div class="row g-4 align-items-center justify-content-between text-center py-5">
             <div class="col-md" id="HTML">
+                
                 <h5><span class="fw-bold">HTML</span></h5>
+                <br class="mobile-break">
                 <?php while ($row = $inhoud_html->fetch()) { ?>
                     <a href="weergave.php?id=<?php echo $row['id'] ?>" class="text-decoration-none text-dark"><?php echo $row['onderdeel']; ?></a>
                     <br>
+                    <br class="mobile-break">
+                    <br class="mobile-break">
                 <?php } ?>
             </div>
 
             <div class="col-md" id="CSS">
                 <h5><span class="fw-bold">CSS</span></h5>
+                <br class="mobile-break">
                 <?php while ($row = $inhoud_css->fetch()) { ?>
                     <a href="weergave.php?id=<?php echo $row['id'] ?>" class="text-decoration-none text-dark"><?php echo $row['onderdeel']; ?></a>
                     <br>
+                    <br class="mobile-break">
+                    <br class="mobile-break">
                 <?php } ?>
             </div>
         </div>
@@ -146,17 +153,23 @@ $inhoud_diversen = $pdo->query('SELECT * FROM skills WHERE taal = "Diversen"');
         <div class="bg-dark text-light row g-4 align-items-center justify-content-between text-center">
             <div class="col-md" id="PHP">
                 <h5><span class="fw-bold">PHP</span></h5>
+                <br class="mobile-break">
                 <?php while ($row = $inhoud_php->fetch()) { ?>
                     <a href="weergave.php?id=<?php echo $row['id'] ?>" class="text-decoration-none text-light"><?php echo $row['onderdeel']; ?></a>
                     <br>
+                    <br class="mobile-break">
+                    <br class="mobile-break">
                 <?php } ?>
             </div>
 
             <div class="col-md" id="PHP-PDO">
                 <h5><span class="fw-bold">MySQL/PHP-PDO</span></h5>
+                <br class="mobile-break">
                 <?php while ($row = $inhoud_phppdo->fetch()) { ?>
                     <a href="weergave.php?id=<?php echo $row['id'] ?>" class="text-decoration-none text-light"><?php echo $row['onderdeel']; ?></a>
                     <br>
+                    <br class="mobile-break">
+                    <br class="mobile-break">
                 <?php } ?>
             </div>
         </div>
@@ -164,17 +177,23 @@ $inhoud_diversen = $pdo->query('SELECT * FROM skills WHERE taal = "Diversen"');
         <div class="row g-4 align-items-center justify-content-between text-center py-5">
             <div class="col-md" id="JavaScript">
                 <h5><span class="fw-bold">JavaScript</span></h5>
+                <br class="mobile-break">
                 <?php while ($row = $inhoud_javascript->fetch()) { ?>
                     <a href="weergave.php?id=<?php echo $row['id'] ?>" class="text-decoration-none text-dark"><?php echo $row['onderdeel']; ?></a>
                     <br>
+                    <br class="mobile-break">
+                    <br class="mobile-break">
                 <?php } ?>
             </div>
 
             <div class="col-md" id="Python">
                 <h5><span class="fw-bold">Python</span></h5>
+                <br class="mobile-break">
                 <?php while ($row = $inhoud_python->fetch()) { ?>
                     <a href="weergave.php?id=<?php echo $row['id'] ?>" class="text-decoration-none text-dark"><?php echo $row['onderdeel']; ?></a>
                     <br>
+                    <br class="mobile-break">
+                    <br class="mobile-break">
                 <?php } ?>
             </div>
         </div>
@@ -182,17 +201,23 @@ $inhoud_diversen = $pdo->query('SELECT * FROM skills WHERE taal = "Diversen"');
         <div class="bg-dark text-light row g-4 align-items-center justify-content-between text-center">
             <div class="col-md" id="Git">
                 <h5><span class="fw-bold">Git</span></h5>
+                <br class="mobile-break">
                 <?php while ($row = $inhoud_git->fetch()) { ?>
                     <a href="weergave.php?id=<?php echo $row['id'] ?>" class="text-decoration-none text-light"><?php echo $row['onderdeel']; ?></a>
                     <br>
+                    <br class="mobile-break">
+                    <br class="mobile-break">
                 <?php } ?>
             </div>
 
             <div class="col-md" id="Diversen">
                 <h5><span class="fw-bold">Diversen</span></h5>
+                <br class="mobile-break">
                 <?php while ($row = $inhoud_diversen->fetch()) { ?>
                     <a href="weergave.php?id=<?php echo $row['id'] ?>" class="text-decoration-none text-light"><?php echo $row['onderdeel']; ?></a>
                     <br>
+                    <br class="mobile-break">
+                    <br class="mobile-break">
                 <?php } ?>
             </div>
         </div>
@@ -248,13 +273,13 @@ $inhoud_diversen = $pdo->query('SELECT * FROM skills WHERE taal = "Diversen"');
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous">
     </script>
     <script type="text/javascript">
-var cpm = {};
-(function(h,u,b){
-var d=h.getElementsByTagName("script")[0],e=h.createElement("script");
-e.async=true;e.src='https://cookiehub.net/c2/2c9d156d.js';
-e.onload=function(){u.cookiehub.load(b);};
-d.parentNode.insertBefore(e,d);
-})(document,window,cpm);
+// var cpm = {};
+// (function(h,u,b){
+// var d=h.getElementsByTagName("script")[0],e=h.createElement("script");
+// e.async=true;e.src='https://cookiehub.net/c2/2c9d156d.js';
+// e.onload=function(){u.cookiehub.load(b);};
+// d.parentNode.insertBefore(e,d);
+// })(document,window,cpm);
 </script>
 </body>
 

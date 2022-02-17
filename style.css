@@ -10,7 +10,9 @@ body::before {
     border-radius: 10px;
 }
 
-
+@media screen and (min-width: 600px)  {
+    .mobile-break { display: none; }
+}
 @media (min-width: 768px) {
     .news-input {
         width: 50%;
