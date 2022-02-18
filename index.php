@@ -23,19 +23,6 @@ $inhoud_diversen = $pdo->query('SELECT * FROM skills WHERE taal = "Diversen"');
 <html lang="en">
 
 <head>
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-194047847-4"></script>
-    <script>
-        window.dataLayer = window.dataLayer || [];
-
-        function gtag() {
-            dataLayer.push(arguments);
-        }
-        gtag('js', new Date());
-
-        gtag('config', 'UA-194047847-4');
-    </script>
-
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -51,7 +38,45 @@ $inhoud_diversen = $pdo->query('SELECT * FROM skills WHERE taal = "Diversen"');
 </head>
 
 <body>
-        
+    <!-- Piwik script -->
+    <script type="text/javascript">
+        (function(window, document, dataLayerName, id) {
+            window[dataLayerName] = window[dataLayerName] || [], window[dataLayerName].push({
+                start: (new Date).getTime(),
+                event: "stg.start"
+            });
+            var scripts = document.getElementsByTagName('script')[0],
+                tags = document.createElement('script');
+
+            function stgCreateCookie(a, b, c) {
+                var d = "";
+                if (c) {
+                    var e = new Date;
+                    e.setTime(e.getTime() + 24 * c * 60 * 60 * 1e3), d = "; expires=" + e.toUTCString()
+                }
+                document.cookie = a + "=" + b + d + "; path=/"
+            }
+            var isStgDebug = (window.location.href.match("stg_debug") || document.cookie.match("stg_debug")) && !window.location.href.match("stg_disable_debug");
+            stgCreateCookie("stg_debug", isStgDebug ? 1 : "", isStgDebug ? 14 : -1);
+            var qP = [];
+            dataLayerName !== "dataLayer" && qP.push("data_layer_name=" + dataLayerName), isStgDebug && qP.push("stg_debug");
+            var qPString = qP.length > 0 ? ("?" + qP.join("&")) : "";
+            tags.async = !0, tags.src = "https://phrozbug.containers.piwik.pro/" + id + ".js" + qPString, scripts.parentNode.insertBefore(tags, scripts);
+            ! function(a, n, i) {
+                a[n] = a[n] || {};
+                for (var c = 0; c < i.length; c++) ! function(i) {
+                    a[n][i] = a[n][i] || {}, a[n][i].api = a[n][i].api || function() {
+                        var a = [].slice.call(arguments, 0);
+                        "string" == typeof a[0] && window[dataLayerName].push({
+                            event: n + "." + i + ":" + a[0],
+                            parameters: [].slice.call(arguments, 1)
+                        })
+                    }
+                }(i[c])
+            }(window, "ppms", ["tm", "cm"]);
+        })(window, document, 'dataLayer', 'a2e3de91-30c3-4f03-97c6-fcc64fdfc541');
+    </script><noscript><iframe src="https://phrozbug.containers.piwik.pro/a2e3de91-30c3-4f03-97c6-fcc64fdfc541/noscript.html" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+
     <!--Navigation-->
     <nav class="navbar navbar-expand-lg bg-dark navbar-dark py-3 fixed-top">
         <div class="container">
@@ -95,7 +120,7 @@ $inhoud_diversen = $pdo->query('SELECT * FROM skills WHERE taal = "Diversen"');
         </div>
 
     </nav>
-    
+
     <!-- hero -- -->
     <section class="bg-dark text-light p-5 p-lg-0 pt-lg-5 text-center text-sm-start">
         <div class="container">
@@ -105,7 +130,7 @@ $inhoud_diversen = $pdo->query('SELECT * FROM skills WHERE taal = "Diversen"');
                     <p class="lead my-4">Met Skillsbuddy kun je bijhouden welke programmeertalen je hebt geleerd. Per taal kun je
                         de relevante informatie raadplegen, veranderen en toevoegen.
                     </p>
-                    
+
                     <button class="btn btn-primary btn-lg" data-bs-toggle="modal" data-bs-target="#enroll">
                         Meer informatie</button>
                 </div>
@@ -127,7 +152,7 @@ $inhoud_diversen = $pdo->query('SELECT * FROM skills WHERE taal = "Diversen"');
         <h1 class="text-center mb-4">De Talen & Onderdelen</h1>
         <div class="row g-4 align-items-center justify-content-between text-center py-5">
             <div class="col-md" id="HTML">
-                
+
                 <h5><span class="fw-bold">HTML</span></h5>
                 <br class="mobile-break">
                 <?php while ($row = $inhoud_html->fetch()) { ?>
@@ -224,7 +249,7 @@ $inhoud_diversen = $pdo->query('SELECT * FROM skills WHERE taal = "Diversen"');
         </div>
     </section>
 
-    
+
     <!-- Footer -->
     <footer class="p-5 bg-dark text-white text-center position-relative">
         <div class="container">
@@ -273,14 +298,14 @@ $inhoud_diversen = $pdo->query('SELECT * FROM skills WHERE taal = "Diversen"');
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous">
     </script>
     <script type="text/javascript">
-// var cpm = {};
-// (function(h,u,b){
-// var d=h.getElementsByTagName("script")[0],e=h.createElement("script");
-// e.async=true;e.src='https://cookiehub.net/c2/2c9d156d.js';
-// e.onload=function(){u.cookiehub.load(b);};
-// d.parentNode.insertBefore(e,d);
-// })(document,window,cpm);
-</script>
+        // var cpm = {};
+        // (function(h,u,b){
+        // var d=h.getElementsByTagName("script")[0],e=h.createElement("script");
+        // e.async=true;e.src='https://cookiehub.net/c2/2c9d156d.js';
+        // e.onload=function(){u.cookiehub.load(b);};
+        // d.parentNode.insertBefore(e,d);
+        // })(document,window,cpm);
+    </script>
 </body>
 
 </html>
